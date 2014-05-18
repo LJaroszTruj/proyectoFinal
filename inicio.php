@@ -71,32 +71,10 @@
                     <center>
                         <img src="img/libros3.jpg" id="libros">
                         <h2>Eartclooks</h2>
+                        <br>
+                        <br>
+                        <p><i>"Cada vez que abres un libro y te dispones a leerlo, un árbol sonríe al ver que sí hay vida después de la muerte."</i></p>
                     </center>
-<!--                    <ul id="menu">
-                        <li><a href="#" align="center">Drama</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Comedia</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Acción</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Aventura</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Terror</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Ciencia ficción</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Romántica</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Fantasía</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Tragicomedia</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Policíaca</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Histórica</a></li>
-                        <li>-</li>
-                        <li><a href="#" align="center">Thriller</a></li>
-                    </ul>-->
                 </div><!--Fin del contenido2-->
             </div><!--Fin del contenido-->
             <div id="pie">
