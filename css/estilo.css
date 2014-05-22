@@ -93,3 +93,19 @@
     margin-top: 7%;
     width: 90%;
 }
+
+#formulario{
+    background: rgba(10, 10, 10, 0.2);
+    float: left;
+    overflow-y: auto;
+    width: 100%;
+}
+
+#formTable{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+#eartclooks{
+    margin-top: 10px;
+}
