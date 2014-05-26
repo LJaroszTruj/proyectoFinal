@@ -19,11 +19,17 @@
         <div id="contenedor"> 
             <div id="cabecera">
                 <a href="inicio.php"><img src="img/favicon.png" id="imgLogo"></a>
+                
                 <button id="button1" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false">
                     <a href="libros.php"><span class="ui-button-text">Libros</span></a>
                 </button>
+                <!--Botones que no tienen un uso todavía--> 
                 <button id="button1" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false">
                     <a href="libros.php"><span class="ui-button-text">Compras</span></a>
+                </button>
+                <!--Botones que no tienen un uso todavía-->
+                <button id="button1" class="ui-button ui-widget ui-state-default ui-corner-all ui-button-text-only" role="button" aria-disabled="false">
+                    <a href="libros.php"><span class="ui-button-text">Quiénes somos</span></a>
                 </button>
             </div><!--Fin de la cabecera-->
             <div id="cuerpo">
@@ -79,7 +85,6 @@
                 </div><!--Fin del contenido2-->
             </div><!--Fin del contenido-->
             <div id="pie">
-                <p>Quiénes somos</p>
             </div>
         </div><!--Fin del contenedor-->    
         

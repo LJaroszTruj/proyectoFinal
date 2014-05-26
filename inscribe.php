@@ -1,3 +1,22 @@
+<?php
+        $conexion = mysql_connect("localhost","root","") or die("No se ha podido conectar");
+        mysql_select_db("eartclooks", $conexion);
+        
+        $nombre = $_POST['nombre'];
+        $apellido = $_POST['apellido'];
+        $email = $_POST['email'];
+        $edad = $_POST['edad'];
+        $contraseña = $_POST['pass1'];        
+        $alias = $_POST['alias'];
+        
+        $queryInserta = "INSERT INTO `eartclooks`.`usuario` (`Alias`, `Pass`, `Nombre`, `Apellido`, `Edad`, `eMail`) VALUES ('$alias', '$contraseña', '$nombre', '$apellido', '$edad', '$email');";
+        $queryVerifAlias = "SELECT COUNT(alias) FROM usuario WHERE alias = '$alias'";
+        $queryVerifEMail = "SELECT COUNT(eMail) FROM usuario WHERE eMail = '$email'";
+        
+        $verifAlias = mysql_query($queryVerifAlias, $conexion)OR die(mysql_error());
+        $verifEMail = mysql_query($queryVerifEMail, $conexion)OR die(mysql_error());
+        
+?>
 <!DOCTYPE html>
 <html>
     <head>
@@ -25,6 +44,9 @@
                         <fieldset>
                             <center>
                             <table id="formTable">
+                                <tr>
+                                    <td>Alias:</td>    <td><input type="text" name="alias"></td>
+                                </tr>
                                 <tr>
                                     <td>Nombre:</td>    <td><input type="text" name="nombre"></td>
                                 </tr>
@@ -54,15 +76,33 @@
                 <a href="index.php">Volver a la página de inicio</a>
                 <br>
                 <br>
+                <?php
+                /*Dos whiles para saber si existen datos que se repitan*/
+                while ($comprueba = mysql_fetch_row($verifAlias)) {
+                    foreach ($comprueba as $valor){
+                        $valor;
+                    }
+                }
+                while ($comprueba2 = mysql_fetch_row($verifEMail)) {
+                    foreach ($comprueba2 as $valor2){
+                        $valor2;
+                    }
+                }
+                
+                if(($valor == '1') || ($valor2 == '1')){
+                    echo 'El usuario y/o el correo electrónico ya existen, por favor, siga el siguiente'."<a href='inscribe.php'>".' link'."</a>";           
+                }else{
+                    mysql_query($queryInserta, $conexion)OR die(mysql_error());
+                    echo '<script type="text/javascript">window.location="inicio.php";</script>';
+                    die();  
+                }
+                ?>
+                <br>
+                <br>
                 </center>
                 </div><!--Fin del formulario-->
         </div><!--Fin del contenedor-->
-        <?php
-        $conexion = mysql_connect("localhost","root","") or die("No se ha podido conectar");
-        mysql_select_db("eartclooks", $conexion);
         
-        
-        ?>
         
         <script src="js/jquery-1.9.1.js"></script>
         <script src="js/jquery-ui-1.10.3.custom.min.js"></script>  

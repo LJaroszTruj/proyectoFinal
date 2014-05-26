@@ -11,7 +11,7 @@
         <link rel="stylesheet" href="css/jquery-ui.css">
         <link rel="stylesheet" href="css/custom-theme/jquery-ui-1.10.3.custom.min.css">
         
-        <title></title>
+        <title>Libros</title>
     </head>
     <body background="img\fondo_1.jpg" style=" background-attachment: fixed">
         <div id="contenedor"> 
